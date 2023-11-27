@@ -7,6 +7,11 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   font-family: "Proxima-Nova", "proximanova-bold", "Segoe-Script" !important;
+  min-height: 100vh !important;
+  weight: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,8 +40,69 @@
 
 body {
   color: var(--black, #383838);
-  font-family: "Proxima-Nova", "proximanova-bold" !important;
+  line-height: normal !important;
 }
 h2 {
   font-size: 1.5em;
+}
+p {
+  line-height: normal !important;
+}
+btuton {
+  -webkit-appearance: button;
+  background-color: #ff8f2f !important ;
+  background-image: none;
+  border-radius: 5px;
+  border: 1px solid #b9b9b9;
+}
+
+/* Font Sizes  */
+
+.buttonFont {
+  font-size: 1vw;
+}
+.fs-18 {
+  font-size: 1vw;
+  font-family: "Proxima-Nova";
+  font-weight: normal;
+}
+.fs-16 {
+  font-size: 0.833vw;
+  font-family: "Proxima-Nova";
+  font-weight: normal;
+}
+
+.unCheckedColor {
+  color: red;
+}
+
+.CheckedColor {
+  color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    font-family: "Proxima-Nova", "proximanova-bold", "Segoe-Script" !important;
+    min-height: 100% !important;
+    weight: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .buttonFont {
+    font-size: 16px;
+  }
+  .fs-18 {
+    font-size: 16px;
+    font-family: "Proxima-Nova";
+    font-weight: normal;
+  }
+  .fs-16 {
+    font-size: 14px;
+    font-family: "Proxima-Nova";
+    font-weight: normal;
+  }
 }
