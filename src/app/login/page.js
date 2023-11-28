@@ -1,10 +1,10 @@
 "use client";
-import CustomButton from "../component/button";
+import CustomButton from "../[component]/button";
 import Image from "next/image";
 import { Checkbox, FormControl } from "@mui/material";
 import { useState } from "react";
 import Link from "next/link";
-import PasswordField from "../component/password-filed";
+import PasswordField from "../[component]/password-filed";
 
 const Login = () => {
   const [checked, setChecked] = useState(false);
